@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* Establecer colores de fondo y texto para el modo oscuro */
+    body {
+      background-color: #121212; /* un gris muy oscuro */
+      color: #ffffff; /* blanco */
+    }
+
+    p {
+      color: salmon;
+    }
+
+    p::first-letter {
+      color: teal;
+    }
+
+    p::before {
+      content: "⭐";
+    }
+
+    p::after {
+      content: "🦉";
+    }
+    p:hover {
+      /* cambiar el color al pasar el mouse*/
+      color: skyblue;
+    }
+    /* el parrafo que este en segundo lugar le pase tal cosa */
+    div p:nth-child(2) {
+      color: violet;
+    }
+
+    ::placeholder {
+      color: "red";
+    }
+  </style>
+  <body>
+    <p>hola</p>
+
+    <div>
+      <p>platzi</p>
+      <p>master</p>
+      <p>lo mejor</p>
+
+      <input type="text" placeholder="name" />
+    </div>
+  </body>
+</html>
