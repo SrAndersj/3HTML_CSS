@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* Establecer colores de fondo y texto para el modo oscuro */
+      body {
+        background-color: #121212; /* un gris muy oscuro */
+        color: #ffffff; /* blanco */
+      }
+      .container {
+        display: flex;
+        background: papayawhip;
+        /* justify-content: space-between; */
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        flex-direction: column;
+      }
+
+      .item {
+        width: 60px;
+        height: 30px;
+        background: purple;
+      }
+      /* para elementos impares tengan este color  */
+      .container .item:nth-child(2n + 1) {
+        background: cyan;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </body>
+</html>
